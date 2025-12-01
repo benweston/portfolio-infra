@@ -1,0 +1,129 @@
+###################################
+# macOS
+###################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+###################################
+# Sublime Text
+###################################
+*.sublime-workspace
+*.sublime-project
+
+###################################
+# Vim
+###################################
+*.swp
+*.swo
+*.swx
+Session.vim
+
+###################################
+# Zsh / Shell
+###################################
+.zsh_history
+.zcompdump*
+.zsh_sessions/
+
+###################################
+# SSH
+###################################
+# Ignore private keys (never commit)
+id_rsa
+id_ecdsa
+id_ed25519
+id_rsa.pub
+id_ecdsa.pub
+id_ed25519.pub
+*.pem
+*.key
+
+###################################
+# Terraform (DigitalOcean)
+###################################
+# Local terraform state
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars.json
+*.auto.tfvars
+
+# Override & debug files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.rc
+
+###################################
+# Terragrunt (only if using it)
+###################################
+.terragrunt-cache/
+*.hcl.lock
+terragrunt-debug.tfvars.json
+
+###################################
+# Python (scripts/tooling)
+###################################
+*.py[cod]
+*$py.class
+__pycache__/
+*.so
+.Python
+build/
+dist/
+.eggs/
+develop-eggs/
+downloads/
+wheels/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Python tooling
+.mypy_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.pyre/
+.dmypy.json
+
+###################################
+# JetBrains / PyCharm
+###################################
+.idea/
+*.iml
+out/
+cmake-build-*/
+
+###################################
+# VS Code
+###################################
+.vscode/
+
+###################################
+# Logs / Temp / General
+###################################
+*.log
+*.tmp
+*.bak
+*.lock
+*.cache
