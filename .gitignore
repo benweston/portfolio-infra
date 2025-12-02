@@ -1,32 +1,149 @@
 ###################################
 # macOS
 ###################################
+# Created by https://www.toptal.com/developers/gitignore/api/macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos
+
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon?
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
 ._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+# End of https://www.toptal.com/developers/gitignore/api/macos
 
 ###################################
 # Sublime Text
 ###################################
+# Created by https://www.toptal.com/developers/gitignore/api/sublimetext
+# Edit at https://www.toptal.com/developers/gitignore?templates=sublimetext
+
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
 *.sublime-workspace
-*.sublime-project
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+sftp-config-alt*.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+# End of https://www.toptal.com/developers/gitignore/api/sublimetext
 
 ###################################
 # Vim
 ###################################
-*.swp
-*.swo
-*.swx
+# Created by https://www.toptal.com/developers/gitignore/api/vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim
+
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
 Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# End of https://www.toptal.com/developers/gitignore/api/vim
 
 ###################################
 # Zsh / Shell
 ###################################
+# Created by https://www.toptal.com/developers/gitignore/api/zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=zsh
+
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+*.zwc
+*.zwc.old
+
+# Zsh completion-optimization dumpfile
+*zcompdump*
+
+# Zsh history
 .zsh_history
-.zcompdump*
-.zsh_sessions/
+
+# Zsh sessions
+.zsh_sessions
+
+# Zsh zcalc history
+.zcalc_history
+
+# A popular plugin manager's files
+._zinit
+.zinit_lstupd
+
+# zdharma/zshelldoc tool's files
+zsdoc/data
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+.directory_history
+
+# Zunit tests' output
+/tests/_output/*
+!/tests/_output/.gitkeep
+
+# End of https://www.toptal.com/developers/gitignore/api/zsh
 
 ###################################
 # SSH
@@ -35,24 +152,35 @@ Session.vim
 id_rsa
 id_ecdsa
 id_ed25519
-id_rsa.pub
-id_ecdsa.pub
-id_ed25519.pub
 *.pem
 *.key
 
+# Created by https://www.toptal.com/developers/gitignore/api/ssh
+# Edit at https://www.toptal.com/developers/gitignore?templates=ssh
+# These patterns recursively ignore keys anywhere in the repo.
+
+**/.ssh/id_*
+**/.ssh/*_id_*
+**/.ssh/known_hosts
+
+# End of https://www.toptal.com/developers/gitignore/api/ssh
+
 ###################################
-# Terraform (DigitalOcean)
+# Terraform
 ###################################
 # Local terraform state
 *.tfstate
 *.tfstate.*
+
+# Crash log files
 crash.log
 crash.*.log
 
 # Terraform directories
 .terraform/
-.terraform.lock.hcl
+
+# Terraform lockfile — usually commit this for reproducibility
+# .terraform.lock.hcl   # <-- keep committed, do NOT ignore
 
 # Sensitive variable files
 *.tfvars
@@ -62,19 +190,12 @@ terraform.tfvars.json
 *.auto.tfvars.json
 *.auto.tfvars
 
-# Override & debug files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-terraform.rc
-
-###################################
-# Terragrunt (only if using it)
-###################################
-.terragrunt-cache/
-*.hcl.lock
-terragrunt-debug.tfvars.json
+# Terraform plan files (IMPORTANT — do not commit)
+*.tfplan
+*tfplan*
+*.plan
+plan.out
+planfile
 
 ###################################
 # Python (scripts/tooling)
@@ -113,11 +234,6 @@ htmlcov/
 *.iml
 out/
 cmake-build-*/
-
-###################################
-# VS Code
-###################################
-.vscode/
 
 ###################################
 # Logs / Temp / General
